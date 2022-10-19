@@ -1,0 +1,72 @@
+.education__wrapper {
+  padding: 30px 30px 30px vw(80, $maxWidth);
+
+  background-color: rgb(225, 235, 236);
+  border-radius: 20px;
+}
+
+.night .education__wrapper {
+  background-color: $grey;
+}
+
+.education__table {
+  margin-bottom: 20px;
+
+  width: 100%;
+}
+
+.education__row {
+  display: flex;
+  column-gap: vw(40, $maxWidth);
+  
+  
+  &--top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $grey;
+  }
+
+  @media (max-width: #{$mobileWidth + px}) {
+    flex-direction: column;
+  }
+  
+}
+
+.night .education__row {
+  &--top {
+    border-color: $grey_light;
+  }
+}
+
+.education__column {
+  padding: 10px;
+
+  @include adaptiv-value(min-width, 200, 100, 0);
+  
+}
+
+.education__link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  line-height: 140%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    
+    transition: width 0.3s linear;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+     
+      border-radius: 15px;
+      background-color: $blue_light;
+    }
+  }
+}

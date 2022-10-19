@@ -1,0 +1,53 @@
+.languages__title {
+  &::before {
+    
+    top: -8px;
+    left: 20%;
+
+    background-color: $pink_light;
+  }
+}
+
+.languages__list {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 80px;
+
+  padding-left: 80px;
+
+  @media (max-width: #{$mobileWidth + px}) {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+.languages__item {
+  position: relative;
+
+  padding-top: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: 40%;
+    z-index: -1;
+
+    width: 120%;
+    height: 120%;
+
+    background: $gradient;
+    border-radius: 50%;
+  }
+}
+
+.night .languages__item {
+  &::before {
+    background: $grey;
+  }
+}
+
+.languages__name {
+  font-size: 24px;
+  font-weight: 700;
+}

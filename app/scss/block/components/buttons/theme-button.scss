@@ -1,0 +1,45 @@
+.theme-button {
+  position: relative;
+  z-index: 4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+
+  cursor: pointer;
+
+  @media (min-width: #{$mobileWidth + px}) {
+    margin-right: vw(60, $maxWidth);
+  }
+}
+
+.theme-button__images {
+  width: 40px;
+  height: 40px;
+}
+
+.theme-button__image {
+  
+  width: 100%;
+
+  &--light {
+    display: none;
+  }
+
+  &--dark {
+    display: block;
+  }
+}
+
+.night .theme-button__image {
+  &--light {
+    display: block;
+  }
+
+  &--dark {
+    display: none;
+  }
+}

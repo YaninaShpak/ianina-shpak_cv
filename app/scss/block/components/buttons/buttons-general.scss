@@ -1,0 +1,48 @@
+.button,
+.button-link {
+  display: inline-block;
+
+  padding: 15px 10px;
+  min-width: 200px;
+
+  font-size: 20px;
+  font-weight: 500;
+  
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+  border: 2px solid $pink;
+
+  transition: box-shadow 0.3s linear;
+
+  &:hover {
+    box-shadow: 0 0 15px 0 rgba($pink, 0.5);
+  }
+
+  @media (max-width: #{$mobileWidth + px}) {
+    padding: 10px 5px;
+    min-width: 100px;
+    font-size: 16px;
+  }
+}
+
+
+.button {
+
+  color: $grey;
+  background: #fff;
+}
+
+.button-link {
+  color: #fff;
+
+  background-color: $pink;
+  opacity: 1;
+
+  
+
+  
+}
+

@@ -1,0 +1,22 @@
+.projects-table {
+  
+  width: 100%;
+
+  font-size: 18px;
+}
+
+.projects-table__row {
+  border-bottom: 1px solid $pink_light;
+}
+
+.projects-table__column {
+  padding: 15px 10px;
+
+  text-align: left;
+
+  border-bottom: 1px solid $pink_light;
+}
+
+.projects-table__link {
+  color: $grey;
+}

@@ -1,0 +1,10 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: vw(120, $maxWidth);
+
+  margin-bottom: vw(60, $maxWidth);
+
+  
+}
+

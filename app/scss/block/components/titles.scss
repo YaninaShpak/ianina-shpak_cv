@@ -1,0 +1,53 @@
+//h2
+.title {
+  position: relative;
+  
+  display: inline-block;
+
+  margin-bottom: vw(50, $maxWidth);
+
+  @include adaptiv-font(40, 20);
+  line-height: 120%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+
+    top: -20%;
+    left: 20%;
+    
+    width: 120%;
+    @include adaptiv-value(height, 40, 20, 0);
+    
+    background-color: $blue_white;
+
+    transition: all 1s;
+  }
+  
+}
+
+.hidden.title {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hidden.title::before {
+  
+  transform: scale(0);
+}
+
+.show.title {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+
+  &::before {
+    
+    transform: scale(1);
+  }
+}
+
+//h3

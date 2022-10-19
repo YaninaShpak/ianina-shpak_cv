@@ -1,0 +1,47 @@
+.skills-sublist__item {
+  margin-bottom: 15px;
+  padding-left: 40px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--html {
+    background-image: url(../img/icons/html5.svg);
+  }
+
+  &--css {
+    background-image: url(../img/icons/css.svg);
+  }
+
+  &--js{
+    background-image: url(../img/icons/javascript.svg);
+  }
+
+  &--react {
+    background-image: url(../img/icons/react.svg);
+  }
+
+  &--scss {
+    background-image: url(../img/icons/sass.svg);
+  }
+
+  &--gulp {
+    background-image: url(../img/icons/gulp.svg);
+  }
+
+  &--git {
+    background-image: url(../img/icons/git.svg);
+  }
+
+  &--github {
+    background-image: url(../img/icons/github.svg);
+  }
+
+  &--figma {
+    background-image: url(../img/icons/figma.svg);
+  }
+
+  &--bem {
+    background-image: url(../img/icons/bem_icon.svg);
+  }
+}

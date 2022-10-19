@@ -1,0 +1,41 @@
+@use "sass:math";
+@use "sass:color";
+
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'global.scss';
+
+//components
+@import 'block/components/titles.scss';
+@import 'block/components/code.scss';
+@import 'block/components/project-card.scss';
+
+  //buttons
+  @import 'block/components/buttons/buttons-general.scss';
+  @import 'block/components/buttons/burger-button.scss';
+  @import 'block/components/buttons/theme-button.scss';
+  @import 'block/components/buttons/button-top.scss';
+
+//header
+@import 'block/header/main-header.scss';
+@import 'block/header/main-nav.scss';
+@import 'block/header/site-list.scss';
+
+//main
+@import 'block/main-content.scss';
+@import 'block/intro.scss';
+@import 'block/about-me.scss';
+@import 'block/skills.scss';
+@import 'block/skills-list.scss';
+@import 'block/skills-sublist.scss';
+@import 'block/code-example.scss';
+@import 'block/projects.scss';
+@import 'block/projects-list.scss';
+@import 'block/education.scss';
+@import 'block/languages.scss';
+@import 'block/contacts.scss';
+@import 'block/contacts-list.scss';
+
+//footer
+@import 'block/footer/main-footer.scss';

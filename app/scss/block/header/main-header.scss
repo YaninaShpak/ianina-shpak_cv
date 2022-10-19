@@ -1,0 +1,32 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.main-header.color {
+  background: #f5f5f5;
+}
+
+.night .main-header.color {
+  background: $grey;
+}
+
+.main-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: #{$mobileWidth + px}) {
+    flex-direction: row-reverse;
+    
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+  }
+  
+}

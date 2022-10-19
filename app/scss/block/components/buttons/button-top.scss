@@ -1,0 +1,23 @@
+.button-top {
+  position: fixed;
+  bottom: 100px;
+  right: vw(100, $maxWidth);
+
+  display: none;
+
+  @include adaptiv-value(width, 80, 40, 0);
+  @include adaptiv-value(height, 80, 40, 0);
+
+  @include adaptiv-font(20, 14);
+  color: #fff;
+
+  background: $pink;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.button-top.show {
+  display: block;
+}

@@ -1,0 +1,11 @@
+.projects__title {
+  &::before {
+
+    background-color: $pink_light;
+  }
+}
+
+.projects__wrapper {
+  display: grid;
+  place-items: center;
+}

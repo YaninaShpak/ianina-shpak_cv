@@ -1,0 +1,20 @@
+.main-footer {
+  background-color: $blue_light;
+}
+
+.night .main-footer {
+  background-color: $grey;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: vw(50, $maxWidth) 0;
+}
+
+.main-footer__copyright {
+  color: #fff;
+}
+

@@ -1,0 +1,33 @@
+.skills-list {
+  display: grid;
+  grid-template-areas: 
+  "technology tools methodologies";
+  column-gap: vw(40, $maxWidth);
+
+  @media (max-width: #{$mobileWidth + px}) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+  }
+}
+
+.skills-list__item {
+  &--technology {
+    grid-area: technology;
+  }
+
+  &--tools {
+    grid-area: tools;
+  }
+
+  &--methodologies {
+    grid-area: methodologies;
+  }
+}
+
+.skills-list__item-title {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}

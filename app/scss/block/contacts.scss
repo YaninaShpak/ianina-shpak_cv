@@ -1,0 +1,33 @@
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts__wrapper {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: vw(30, $maxWidth);
+  width: 100%;
+
+  background-color: #f9aeb1;
+  border-radius: 20px;
+
+  
+}
+
+.night .contacts__wrapper {
+  background-color: $blue;
+}
+
+.contacts__location {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  @include adaptiv-font(20, 14);
+}
+

@@ -1,0 +1,30 @@
+.code {
+  font-family: Menlo, 'Courier New', Courier, monospace;
+  font-size: 18px;
+
+  @media (max-width: #{$tableWidth + px}) {
+    @include adaptiv-font(18, 12);
+  }
+
+  @media (max-width: #{$mobileWidth + px}) {
+    font-size: 10px;
+  }
+}
+
+.code__wrapper {
+  font-family: Menlo, 'Courier New', Courier, monospace;
+}
+
+.code__declarations {
+  color: #148b8b;
+  
+}
+
+.code__name {
+  font-weight: 600;
+  color: shade($blue_light, 25%);
+}
+
+.code__number {
+  color: #fa595f;
+}
