@@ -1,8 +1,12 @@
+import { isWebp } from "./modules/function-webp.js";
+
 import { showElements } from "./modules/show-elements.js";
 import { showMenu } from "./modules/showMenu.js";
 import { toggleTHeme } from "./modules/toggle-theme.js";
 import { headerFixed } from "./modules/header-fixed.js";
 import { topBtnFixed } from "./modules/topBtn-fixed.js";
+
+isWebp();
 
 document.addEventListener('DOMContentLoaded', () => {
   const icnMenu = document.querySelector('.burger-button');
