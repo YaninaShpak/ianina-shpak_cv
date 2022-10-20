@@ -1,7 +1,7 @@
 .intro {
   
   background-color: $pink_white;
-  background-image: url(../img/pexels-eberhard-grossgasteiger-2086620.jpg);
+  background-image: url(../img/pexels-eberhard-grossgasteiger-2088238.jpg);
   background-repeat: no-repeat;
   background-size: cover;
  
@@ -16,8 +16,8 @@
 
 .night .intro {
   background-color: #28054b;
-  background-image: url(../img/pexels-eberhard-grossgasteiger-1624438.jpg);
-  background-position: 0 -200px;
+  background-image: url(../img/1239365.jpg);
+  // background-position: 0 -200px;
 
    @media (max-width: #{$tableWidth + px}) {
     background-position: 0 0;
@@ -62,9 +62,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  text-shadow: 1px -1px 1px $grey;
 
   span {
-    color: $pink_light;
+    font-family: 'Pacifico', cursive;
+    color: $pink;
+    text-shadow: none;
+    text-transform: none;
   }
 
   @media (max-width: #{$maxWidth + px}) {
@@ -101,6 +105,15 @@
       padding-right: 10px;
       background-image: none;
     }
+  }
+}
+
+.night .intro__button {
+  background-color: $pink;
+  border-color: $pink;
+
+  &--download {
+    background-color: #fff;
   }
 }
 

@@ -1,13 +1,4 @@
-.about-me {
-  // padding-top: 50px;
-}
 
-.about-me__title {
-  &::before {
-
-    background-color: $blue_white;
-  }
-}
 
 .about-me__text-wrapper {
   padding: 0 vw(270, $maxWidth) 0 40px;

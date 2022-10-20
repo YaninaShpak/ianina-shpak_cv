@@ -29,6 +29,8 @@
 }
 
 
+
+
 .button {
 
   color: $grey;
@@ -40,9 +42,10 @@
 
   background-color: $pink;
   opacity: 1;
+}
 
-  
-
-  
+.night .button-link {
+  background-color: $purple;
+  border-color: $purple;
 }
 

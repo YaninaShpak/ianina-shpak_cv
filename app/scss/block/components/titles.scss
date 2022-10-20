@@ -27,6 +27,12 @@
   
 }
 
+.night .title {
+  &::before {
+    background-color: $purple_light;
+  }
+}
+
 .hidden.title {
   opacity: 0;
   filter: blur(5px);

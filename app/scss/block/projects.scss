@@ -1,4 +1,5 @@
-.projects__title {
+.projects__title,
+.night .projects__title {
   &::before {
 
     background-color: $pink_light;

@@ -1,4 +1,5 @@
-.languages__title {
+.languages__title,
+.night .languages__title {
   &::before {
     
     top: -8px;
@@ -43,7 +44,7 @@
 
 .night .languages__item {
   &::before {
-    background: $grey;
+    background: $gradient_night;
   }
 }
 

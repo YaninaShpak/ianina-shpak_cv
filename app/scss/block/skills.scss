@@ -1,6 +1,7 @@
 
 
-.skills__title {
+.skills__title,
+.night .skills__title {
   &::before {
 
     background-color: $pink_light;

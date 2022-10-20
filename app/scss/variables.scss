@@ -1,11 +1,11 @@
-// Ширина контейнера
+// Width
 $maxWidth: 1440;
 $maxWidthContainer: 1440;
 
 $tableWidth: 894;
 $mobileWidth: 620;
 
-// Цвета
+// Colors
 $grey: #545454;
 $grey_light: #e1ebec;
 $grey_rgba: rgb(84, 84, 84, 0.3);
@@ -17,7 +17,14 @@ $pink_light: #ff8d92;
 $pink_white: #facfd0;
 $gradient: linear-gradient(67.05deg, #BEF9F9 19.78%, #FAE0E1 74.89%);
 
-//Шрифт
+  //night
+  $purple_dark: #0E0619;
+  $purple: #572462;
+  $purple_light: #7C33B5;
+  $purple_white: #D77FC1;
+  $gradient_night: linear-gradient(302.45deg, #7C33B5 14.11%, #ED969E 64.31%);;
+
+//Fonts
 $fontBasic: Roboto, Arial, Helvetica, sans-serif;
 
 
