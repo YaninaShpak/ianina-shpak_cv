@@ -176,6 +176,10 @@ body .material-icons {
   transition: all 1s;
 }
 
+.night .title::before {
+  background-color: #7C33B5;
+}
+
 .hidden.title {
   opacity: 0;
   filter: blur(5px);
@@ -364,6 +368,11 @@ body .material-icons {
   color: #fff;
   background-color: #fa595f;
   opacity: 1;
+}
+
+.night .button-link {
+  background-color: #572462;
+  border-color: #572462;
 }
 
 .burger-button {
@@ -639,7 +648,7 @@ body .material-icons {
 
 .intro {
   background-color: #facfd0;
-  background-image: url(../img/pexels-eberhard-grossgasteiger-2086620.jpg);
+  background-image: url(../img/pexels-eberhard-grossgasteiger-2088238.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -653,8 +662,7 @@ body .material-icons {
 
 .night .intro {
   background-color: #28054b;
-  background-image: url(../img/pexels-eberhard-grossgasteiger-1624438.jpg);
-  background-position: 0 -200px;
+  background-image: url(../img/1239365.jpg);
 }
 @media (max-width: 894px) {
   .night .intro {
@@ -697,9 +705,13 @@ body .material-icons {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  text-shadow: 1px -1px 1px #545454;
 }
 .intro__text span {
-  color: #ff8d92;
+  font-family: "Pacifico", cursive;
+  color: #fa595f;
+  text-shadow: none;
+  text-transform: none;
 }
 @media (max-width: 1440px) and (max-width: 767px) {
   .intro__text {
@@ -743,6 +755,14 @@ body .material-icons {
   }
 }
 
+.night .intro__button {
+  background-color: #fa595f;
+  border-color: #fa595f;
+}
+.night .intro__button--download {
+  background-color: #fff;
+}
+
 .intro__image-wrapper {
   position: relative;
   z-index: 1;
@@ -771,10 +791,6 @@ body .material-icons {
   height: auto;
 }
 
-.about-me__title::before {
-  background-color: #7ddede;
-}
-
 .about-me__text-wrapper {
   padding: 0 18.75vw 0 40px;
 }
@@ -788,7 +804,8 @@ body .material-icons {
   margin-bottom: 10px;
 }
 
-.skills__title::before {
+.skills__title::before,
+.night .skills__title::before {
   background-color: #ff8d92;
 }
 
@@ -891,9 +908,11 @@ body .material-icons {
 .night .code-example__button {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(84, 84, 84, 0.5);
+  border-color: #fa595f;
 }
 
-.projects__title::before {
+.projects__title::before,
+.night .projects__title::before {
   background-color: #ff8d92;
 }
 
@@ -968,7 +987,8 @@ body .material-icons {
   background-color: #7ac7c7;
 }
 
-.languages__title::before {
+.languages__title::before,
+.night .languages__title::before {
   top: -8px;
   left: 20%;
   background-color: #ff8d92;
@@ -1005,7 +1025,7 @@ body .material-icons {
 }
 
 .night .languages__item::before {
-  background: #545454;
+  background: linear-gradient(302.45deg, #7C33B5 14.11%, #ED969E 64.31%);
 }
 
 .languages__name {
@@ -1030,7 +1050,7 @@ body .material-icons {
 }
 
 .night .contacts__wrapper {
-  background-color: #148b8b;
+  background-color: #572462;
 }
 
 .contacts__location {
@@ -1100,7 +1120,7 @@ body .material-icons {
 }
 
 .night .contacts-list__icon path {
-  fill: #148b8b;
+  fill: #572462;
 }
 
 .main-footer {
