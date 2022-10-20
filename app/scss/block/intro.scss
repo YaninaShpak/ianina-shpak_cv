@@ -96,6 +96,11 @@
     background-repeat: no-repeat;
     background-size: auto 30px;
     background-position: top 50% right 10px;
+
+    @media (max-width: #{$mobileWidth + px}) {
+      padding-right: 10px;
+      background-image: none;
+    }
   }
 }
 
