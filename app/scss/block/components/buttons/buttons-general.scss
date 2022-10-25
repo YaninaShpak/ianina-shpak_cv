@@ -21,19 +21,21 @@
     box-shadow: 0 0 15px 0 rgba($pink, 0.5);
   }
 
+  &:active {
+    box-shadow: none;
+  }
+
   @media (max-width: #{$mobileWidth + px}) {
     padding: 10px 5px;
     min-width: 100px;
+
     font-size: 16px;
   }
 }
 
-
-
-
 .button {
-
   color: $grey;
+  
   background: #fff;
 }
 
@@ -47,5 +49,17 @@
 .night .button-link {
   background-color: $purple;
   border-color: $purple;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.button-link,
+.night .button-link {
+  &:hover {
+    background-color: #fff;
+    color: $grey;
+  }
 }
 
