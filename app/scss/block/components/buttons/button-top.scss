@@ -16,6 +16,16 @@
   border-radius: 50%;
 
   cursor: pointer;
+
+  transition: box-shadow 0.3s linear;
+
+  &:hover {
+    box-shadow: 0 0 15px 0 rgba($pink, 0.5);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
 }
 
 .button-top.show {
