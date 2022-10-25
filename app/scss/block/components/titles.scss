@@ -24,7 +24,6 @@
 
     transition: all 1s;
   }
-  
 }
 
 .night .title {
@@ -41,7 +40,6 @@
 }
 
 .hidden.title::before {
-  
   transform: scale(0);
 }
 
@@ -51,9 +49,6 @@
   transform: translateX(0);
 
   &::before {
-    
     transform: scale(1);
   }
 }
-
-//h3

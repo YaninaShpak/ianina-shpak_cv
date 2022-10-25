@@ -19,9 +19,9 @@
   display: flex;
   column-gap: vw(40, $maxWidth);
   
-  
   &--top {
     padding-bottom: 20px;
+
     border-bottom: 1px solid $grey;
   }
 
@@ -41,11 +41,11 @@
   padding: 10px;
 
   @include adaptiv-value(min-width, 200, 100, 0);
-  
 }
 
 .education__link {
   position: relative;
+
   text-decoration: none;
   color: inherit;
   line-height: 140%;
@@ -55,6 +55,7 @@
     position: absolute;
     bottom: -5px;
     left: 0;
+    
     width: 0;
     height: 2px;
     

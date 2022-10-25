@@ -45,14 +45,22 @@
   &:hover {
     background: $gradient;
   }
+
+  &:active {
+    background: #fff;
+    box-shadow: inset 0 0 0 2px $grey;
+  }
 }
 
 .night .contacts-list__link {
   background: $grey;
 
   &:hover {
-    // background: rgba($grey, 0.9);
     box-shadow: inset 0 0 2px 2px #fff;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 2px $purple;
   }
 }
 

@@ -1,6 +1,7 @@
 .site-list {
   display: flex;
   column-gap: vw(60, $maxWidth);
+  flex-wrap: wrap;
 
   @media (max-width: #{$mobileWidth + px}) {
     flex-direction: column;
@@ -37,6 +38,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+
     width: 0;
     height: 3px;
     
@@ -54,10 +56,31 @@
 
   @media (max-width: #{$mobileWidth + px}) {
     text-transform: uppercase;
-    
   }
 }
 
 .night .site-list__link {
   color: $grey_light;
+}
+
+.site-list__link,
+.night .site-list__link {
+  &:active {
+    color: $pink_light;
+
+    &::after {
+      width: 0;
+    }
+  }
+}
+
+.site-list__link--active,
+.night .site-list__link--active {
+  color: $pink_light;
+  cursor: default;
+  &:hover {
+    &::after {
+      display: none;
+    }
+  }
 }

@@ -298,12 +298,23 @@ body .material-icons {
 
 .project-card__code-btn {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 6px 26px;
   font-family: Menlo;
   text-decoration: none;
   color: #fff;
   background-color: #148b8b;
   border-radius: 10px;
+  border: 2px solid #148b8b;
+  transition: box-shadow 0.3s linear;
+}
+.project-card__code-btn:hover {
+  color: #545454;
+  background-color: #fff;
+  border: 2px solid #148b8b;
+  box-shadow: 0 0 10px 0 rgba(20, 139, 139, 0.5);
+}
+.project-card__code-btn:active {
+  box-shadow: none;
 }
 @media (max-width: 620px) {
   .project-card__code-btn {
@@ -350,6 +361,10 @@ body .material-icons {
 .button-link:hover {
   box-shadow: 0 0 15px 0 rgba(250, 89, 95, 0.5);
 }
+.button:active,
+.button-link:active {
+  box-shadow: none;
+}
 @media (max-width: 620px) {
   .button,
 .button-link {
@@ -373,6 +388,15 @@ body .material-icons {
 .night .button-link {
   background-color: #572462;
   border-color: #572462;
+}
+.night .button-link:active {
+  box-shadow: none;
+}
+
+.button-link:hover,
+.night .button-link:hover {
+  background-color: #fff;
+  color: #545454;
 }
 
 .burger-button {
@@ -497,6 +521,7 @@ body .material-icons {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: box-shadow 0.3s linear;
 }
 @media (max-width: 767px) {
   .button-top {
@@ -507,6 +532,12 @@ body .material-icons {
   .button-top {
     font-size: calc(14px + 6 * (100vw / 1440));
   }
+}
+.button-top:hover {
+  box-shadow: 0 0 15px 0 rgba(250, 89, 95, 0.5);
+}
+.button-top:active {
+  box-shadow: none;
 }
 
 .button-top.show {
@@ -548,25 +579,25 @@ body .material-icons {
 @media (max-width: 620px) {
   .main-nav {
     position: absolute;
-    opacity: 0;
-    visibility: hidden;
     left: 100%;
     padding: 0;
     width: 100%;
     height: 100vh;
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease-in-out;
   }
 }
 
 @media (max-width: 620px) {
   .main-nav.show {
-    opacity: 1;
-    visibility: visible;
     top: 0;
     left: 0;
     z-index: 2;
     padding-top: 70px;
     background-color: #e1ebec;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -580,6 +611,7 @@ body .material-icons {
   display: flex;
   -moz-column-gap: 4.1666666667vw;
        column-gap: 4.1666666667vw;
+  flex-wrap: wrap;
 }
 @media (max-width: 620px) {
   .site-list {
@@ -639,6 +671,25 @@ body .material-icons {
   color: #e1ebec;
 }
 
+.site-list__link:active,
+.night .site-list__link:active {
+  color: #ff8d92;
+}
+.site-list__link:active::after,
+.night .site-list__link:active::after {
+  width: 0;
+}
+
+.site-list__link--active,
+.night .site-list__link--active {
+  color: #ff8d92;
+  cursor: default;
+}
+.site-list__link--active:hover::after,
+.night .site-list__link--active:hover::after {
+  display: none;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -647,11 +698,11 @@ body .material-icons {
 }
 
 .intro {
+  min-height: 100vh;
   background-color: #facfd0;
   background-image: url(../img/pexels-eberhard-grossgasteiger-2088238.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   overflow: hidden;
 }
 @media (max-width: 894px) {
@@ -661,7 +712,7 @@ body .material-icons {
 }
 
 .night .intro {
-  background-color: #28054b;
+  background-color: #0E0619;
   background-image: url(../img/1239365.jpg);
 }
 @media (max-width: 894px) {
@@ -841,8 +892,8 @@ body .material-icons {
 
 .skills-list__item-title {
   display: inline-block;
-  font-size: 18px;
   margin-bottom: 15px;
+  font-size: 18px;
   text-decoration: underline;
 }
 
@@ -1111,12 +1162,19 @@ body .material-icons {
 .contacts-list__link:hover {
   background: linear-gradient(67.05deg, #BEF9F9 19.78%, #FAE0E1 74.89%);
 }
+.contacts-list__link:active {
+  background: #fff;
+  box-shadow: inset 0 0 0 2px #545454;
+}
 
 .night .contacts-list__link {
   background: #545454;
 }
 .night .contacts-list__link:hover {
   box-shadow: inset 0 0 2px 2px #fff;
+}
+.night .contacts-list__link:active {
+  box-shadow: inset 0 0 0 2px #572462;
 }
 
 .night .contacts-list__icon path {

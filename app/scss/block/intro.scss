@@ -1,23 +1,21 @@
 .intro {
-  
+  min-height: 100vh;
+
   background-color: $pink_white;
   background-image: url(../img/pexels-eberhard-grossgasteiger-2088238.jpg);
   background-repeat: no-repeat;
   background-size: cover;
- 
-  min-height: 100vh;
+  
   overflow: hidden;
 
   @media (max-width: #{$tableWidth + px}) {
     min-height: auto;
   }
-  
 }
 
 .night .intro {
-  background-color: #28054b;
+  background-color: $purple_dark;
   background-image: url(../img/1239365.jpg);
-  // background-position: 0 -200px;
 
    @media (max-width: #{$tableWidth + px}) {
     background-position: 0 0;
@@ -53,7 +51,6 @@
 }
 
 .intro__text {
-  // margin-left: vw(40, $maxWidth);
   margin-bottom: vw(60, $maxWidth);
   
   font-weight: 700;
@@ -124,24 +121,6 @@
  
   margin-right: vw(40, $maxWidth);
 
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   left: 78%;
-  //   transform: translateX(-50%);
-  //   bottom: vw(-82, $maxWidth);
-  //   z-index: -1;
-  //   width: vw(380, $maxWidth);
-  //   height: vw(350, $maxWidth);
-  //   border-radius: 50%;
-
-  //   background-color: $grey_light;
-
-  //   @media (max-width: #{$tableWidth + px}) {
-  //     display: none;
-  //   }
-  // }
-
   @media (max-width: #{$tableWidth + px}) {
     margin-right: 0;
   }
@@ -154,10 +133,9 @@
 }
 
 .intro__image {
-  
-  
   width: vw(400, $maxWidth);
   height: vw(400, $maxWidth);
+
   border-radius: 50%;
   overflow: hidden;
 
@@ -166,7 +144,6 @@
 }
 
 .intro__image img {
-  
   width: 100%;
   height: auto;
 }

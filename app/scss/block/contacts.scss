@@ -5,7 +5,6 @@
 }
 
 .contacts__wrapper {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,8 +14,6 @@
 
   background-color: #f9aeb1;
   border-radius: 20px;
-
-  
 }
 
 .night .contacts__wrapper {
@@ -30,4 +27,3 @@
 
   @include adaptiv-font(20, 14);
 }
-

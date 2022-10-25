@@ -11,7 +11,6 @@
 
     cursor: pointer;
   }
-  
 }
 
 .burger-button.hide {
@@ -27,7 +26,9 @@
   left: 0;
   bottom: 0;
   z-index: 3;
+
   margin: auto;
+
   width: 22px;
   height: 12px;
 }
@@ -58,14 +59,13 @@
   background-color: $grey-light;
 }
 
-
-
 .burger-button.active {
   .burger-button__line {
     &--top {
       transform: rotate(45deg);
       top: 5px;
     }
+    
     &--bottom {
       transform: rotate(-45deg);
       bottom: 5px;
